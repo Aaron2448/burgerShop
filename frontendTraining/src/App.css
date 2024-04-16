@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-image: linear-gradient(79deg, #b55ae6, #c29fd4 48%, #b55ae6);
+  
+}
+
+.auth-form-container, .login-form, .register-form, .standard-form {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.App-footer {
+  max-height: 8vh;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(3px + 1vmin);
+  color: white;
+
+}
+
+@media screen and (min-width: 600px) {
+	.auth-form-container {
+		padding: 0.5rem;
+		border: 1px solid black;
+		border-radius: 10px;
+		margin: 0.5rem;
+		width: 400px;
+		align-items: center;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+}
+
+label {
+	text-align: left;
+	padding: 0.25rem 0;
+	color:black;
+}
+
+input {
+	margin: 0.5rem 0;
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+	width: 220px;
+}
+
+button {
+	border: none;
+	background-color: black;
+	padding: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+.link-btn {
+	background: none;
+	color: white;
+	text-decoration: underline;
+}
+
+.icon-left-nav-bar {
+	text-align: left;
+	color: white;
+	border: 5px solid white;
+	padding: 0.6rem;
+	border-radius: 100px;
+}
+
+MDBTable {
+	text-align: middle;
+	border: 1px solid;
+}
