@@ -62,6 +62,7 @@ const handleSaveOrder = async () => {
   const total = order.reduce((acc, cur) => acc + cur.price, 0);
   const orderData = { order_description, day, month, year, time, total };
   await axios.post('http://localhost:8080/api/v1/orders/create', orderData);
+  setOrder([]);
 };
 
   return (
